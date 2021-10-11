@@ -1,0 +1,375 @@
+  body {               /* взял из образца */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.container{              /* центровщик*/
+  position: relative;
+}
+/* Класс псевдораспорки */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.main-header{           /* 1 блок */
+background-color: #6451d5;  /*цвет изменён с первоначальным вариантом*/
+padding-top: 35px;
+padding-left: 100px;
+padding-right: 100px;
+min-height: 650px;
+}
+
+ .verhnie-ssylki{
+  margin-left: 30px;
+  margin-right: 30px;
+  max-height: 82px;
+}
+/* до сюда разметка совпадает*/
+
+.verhnie-ssylki ul{
+  float: right;
+}
+.verhnie-ssylki ul li{
+  list-style-type: none;   /* убрать маркеры в маркированном списке*/
+  display: inline-block;   /* создаём горизоньалдьное меню */
+  margin-right: 35px;
+  font-family: "Trebuchet MS";
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 0px;
+  text-align: justify;
+}
+.verhnie-ssylki a{
+color: #ffffff;
+text-decoration: none;
+}
+/* !!!надо разбираться с расположением теста сдвинуть влево*/
+
+.maintext{
+  margin-top: 93px;
+  margin-left: 30px;
+  width: 450px;
+  height: 395px;
+}
+.main-zagolovok{
+  font-family: "Trebuchet MS";
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: bold; /* полужирное начертание */
+  line-height: 50px; /* Высота строк */
+}
+.main-container{
+  max-height: 570px;
+}
+/* Разметка сошлась, осталось внешний вид */
+
+.main-text{
+  margin-top: -10px;
+  max-width: 320px;
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  color: #bcb3f2;
+  line-height: 30px; /* Высота строк */
+}
+.main-knopka a{
+  font-family: "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;  /* заглавные буквы */
+  font-weight: bold; /* полужирное начертание */
+  color: #ffffff;
+  background-color: #382d78;
+  padding: 23px 80px;
+}
+.main-knopka{
+  margin-top: 73px;
+}
+/* маленько буквы в кнопке не совпадают, но пойдёт*/
+.kartinka-planshet{
+  position: absolute;
+  background-image: url("../img/planshet.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%; /* выравниваем по центру картинку */
+  top: 155px;
+  left: 410px;
+}
+/* Всё Ок */
+
+.features{           /* 2 блок */
+background-color: #efefef;  /*цвет изменён с первоначальным вариантом*/
+padding-top: 50px;
+padding-left: 100px;
+padding-right: 100px;
+padding-bottom: 45px;
+max-height: 285px;
+}
+.containerfeatures{
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 187px;
+  width: 1020px; /* надо учитывать отступ 30рх*/
+}
+.container-features{
+  float: left;   /* создаём 3 стлбца*/
+  width: 320px;
+  height: 100%;
+}
+.container-features1{
+  margin-right: 30px;
+}
+.container-features3{
+  float: right;
+  margin-left: 30px;
+}
+/* Сетка 2 блока готова */
+
+.logo-features{
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: 50% 0%; /* выравниваем по центру картинку */
+}
+.logo-calendar{
+  background-image: url("../img/calendar.png");
+}
+.logo-otvertka{
+  background-image: url("../img/otvertka.png");
+}
+.logo-computer{
+  background-image: url("../img/komp.png");
+}
+h1{
+  font-family: "Trebuchet MS";
+  font-size: 22px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold; /* полужирное начертание */
+}
+.text-features{
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  color: #555555;
+  text-align: center;
+  padding-top: 6px;
+}
+/*Всё Ок, только небольшие в картинках несовпадения*/
+
+.education{           /* 3 блок */
+background-color: #ffffff;  /*цвет изменён с первоначальным вариантом*/
+padding-top: 30px;
+padding-left: 100px;
+padding-right: 100px;
+padding-bottom: 70px;
+}
+.containereducation{
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 388px;  /* 388px*/
+  width: 1020px; /* надо учитывать отступ 30рх*/
+}
+.zagolovok-education{
+  height: 50px;
+  margin-bottom: 60px;
+}
+.table-education{
+height: 278px;
+}
+/* Сетка сошлась */
+.zagolovok-education{
+font-family: "Trebuchet MS";
+font-size: 45px;
+color: #000000;
+line-height: 50px; /* Высота строк */
+margin-top: 20px; /*!!! меняется сетка как-то связано с высотой строки*/
+}
+tr{
+  font-family: "Tahoma";
+  font-size: 18px;
+  color: #404040;
+  line-height: 30px; /* Высота строк */
+  height: 102px;
+}
+.tolsto{
+  font-family: "Trebuchet MS";
+  font-size: 22px;
+  color: #404040;  /* цвет из гимпа несовпал, взял из обычного текста */
+  line-height: 24px; /* Высота строк */
+}
+table{
+  border-collapse: collapse;  /* избавление от двойных рамок */
+}
+td{
+  border: 2px solid #a7a7a7;
+  padding-left: 30px;
+  vertical-align: middle;
+}
+.seruy {
+  background-color: #efefef;
+  height: 72px;
+}
+.seruy .seruytd1{
+  width: 257px;  /* width 286 - 30 padding-left + !! 1px border */
+}
+.seruy .seruytd2{
+  width: 159px;  /* width 190 - 30 padding-left - !! 1px border */
+}
+.seruy .seruytd3{
+  width: 510px;  /* width 540 - 30 padding-left */
+}
+/*надо разобраться с ячейками*/
+.teble-text{
+	padding-right: 30px; /* отступ текста в обычных ячейках */
+}
+.tolsto{
+	padding-bottom: 54px;
+	vertical-align: bottom;
+}
+/* Всё Ок */
+
+.contacts{           /* 4 блок */
+background-color: #efefef;  /*цвет изменён с первоначальным вариантом*/
+padding-top: 30px;
+padding-left: 100px;
+padding-right: 100px;
+padding-bottom: 60px;
+}
+.containercontacts{
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 479px;
+  width: 1020px; /* надо учитывать отступ 30рх*/
+}
+.zagolovok-contacts-h2{
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  font-size: 45px;
+  color: #000000;
+  line-height: 50px; /* Высота строк */
+  margin-top: 20px; /*!!! меняется сетка как-то связано с высотой строки*/
+  margin-bottom: 60px;
+}
+.form-post{
+  float: left;
+  width: 640px;
+  height: 369px;
+}
+.text-contacts{
+  float: right;
+  width: 320px;
+  height: 348px;
+}
+/*Сетка 4 блока сошлась */
+
+
+.contacts-table td{
+  border: none; /* избавляемся от рамок */
+  padding: 0px;
+}
+.contacts-tr-fio{
+  height: 52px;
+}
+.contacts-tr-gender{
+  height: 90px;
+}
+.contacts-tr-comment{
+  height: 105px;
+}
+.contacts-td-text{
+  text-align: right;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  line-height: 24px; /* Высота строк */
+  vertical-align: middle;
+
+}
+.contacts-td-fio input{
+  width: 485px;
+  height: 52px;
+  font-family: "Tahoma";
+  font-size: 18px;
+  line-height: 24px; /* Высота строк */
+  border: 2px solid #b2b2b2;
+  border-radius: 2px;
+  padding-left: 25px;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+.contacts-td-gender input{
+  margin-left: 29px;
+  margin-right: 27px;
+}
+.contacts-td-gender{
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px; /* Высота строк */
+  color: #404040;
+}
+#gender2{
+  margin-left: 60px;
+}
+.contacts-td-comment textarea{
+  width: 484px;
+  height: 84px;  /* изначально 99 рх */
+  border: 2px solid #b2b2b2;
+  border-radius: 2px;
+  padding-left: 25px;
+  margin-left: 10px;
+  font-family: "Tahoma";
+  font-size: 18px;
+  line-height: 24px; /* Высота строк */
+  padding-top: 15px;
+  resize: none;
+}
+.contacts-td-submit input{
+  margin-left: 10px;
+  background-color: #382d78;
+  border: none;
+  padding-left: 200px;
+  padding-right: 199px;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 24px; /* Высота строк */
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-top: 7px;
+}
+.zagolovok-contacts-h3{
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  color: #000000;
+  font-size: 22px;
+  /*text-transform: uppercase;*/
+  line-height: 30px; /* Высота строк */
+}
+.text-contacts-p{
+  font-family: "Tahoma";
+  color: #555555;
+  font-size: 18px;
+  /*text-transform: uppercase;*/
+  line-height: 24px; /* Высота строк */
+  margin-bottom: 30px;
+}
+.zagolovok-contacts-p{
+  font-family: "Tahoma";
+  color: #555555;
+  font-size: 18px;
+  /*text-transform: uppercase;*/
+  line-height: 24px; /* Высота строк */
+  margin-top: 40px;
+}

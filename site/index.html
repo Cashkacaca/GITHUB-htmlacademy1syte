@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+ <head>
+   <meta charset="utf-8">
+   <title>Итоговое испытание</title>
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+
+ <body>
+   <header class="main-header"> <!-- 1-й обязательный пункт из 5 -->
+     <div class="container main-container clearfix" >   <!-- Возможно контейнер центровщик -->
+
+       <div class="verhnie-ssylki">    <!-- ссылки в самом верху -->
+         <img class="main-logo" src="img/kniga.png" alt="A+">  <!-- логотип с книгой  -->
+         <ul>
+           <li><a href="inner.html">Программа обучения</a></li>
+           <li><a href="#">Выпускники</a></li>
+           <li><a href="#">Как поступить</a></li>
+           <li><a href="#">Контакты</a></li>
+         </ul>
+       </div>
+
+       <div class="maintext">
+         <p class="main-zagolovok">Учеба еще никогда не была такой интересной!</p>
+         <p class="main-text">Обучаем готовых к трудоустройству специалистов на теоретических и практических курсах.</p>
+         <p class="main-knopka"><a class="main-knopka" href="#">Подать заявку</a></p>    <!-- кнопка для нажатия -->
+         <img class="kartinka-planshet" src="img/planshet.png" alt="planshet"> <!-- большая картинка -->
+       </div>
+
+
+     </div>
+   </header>
+   <!-- до сюда с разметкой всё хорошо -->
+
+   <section class="features">  <!-- 2-й обязательный пункт из 5 -->
+    <div class="container containerfeatures clearfix">   <!-- Возможно контейнер центровщик -->
+
+    <div class="container-features container-features1"> <!-- Первый из 3-х блоков особенностей с иконками -->
+      <div class="logo-features logo-calendar">
+      </div>
+      <h1 class="zagolovok-features">
+        Гибкий график обучения
+      </h1>
+      <p class="text-features">
+        Современный темп жизни требует гибкого подхода к расписанию.
+      </p>
+    </div>
+
+    <div class="container-features container-features2"> <!-- Второй из 3-х блоков особенностей с иконками -->
+        <div class="logo-features logo-otvertka">
+        </div>
+        <h1 class="zagolovok-features">
+          Практические занятия
+        </h1>
+        <p class="text-features">
+          На одной теории далеко не уедешь, поэтому мы обучаем на практике.
+        </p>
+    </div>
+
+    <div class="container-features container-features3"> <!-- Третий из 3-х блоков особенностей с иконками -->
+          <div class="logo-features logo-computer">
+          </div>
+          <h1 class="zagolovok-features">
+            Не оставим без работы
+          </h1>
+          <p class="text-features">
+            Хорошие специалисты всегда в цене и Вы станете именно таким.
+          </p>
+    </div>
+
+    </div>
+   </section>
+
+   <section class="education">  <!-- 3-й обязательный пункт из 5 -->
+     <div class="container containereducation">   <!-- Возможно контейнер центровщик -->
+
+       <h2 class="zagolovok-education">
+         Формы обучения
+       </h2>
+
+       <div class="table-education">
+         <table>
+           <tr class="seruy">
+             <td class="seruytd1">Название</td>
+             <td class="seruytd2">Длительность</td>
+             <td class="seruytd3">Описание</td>
+           </tr>
+           <tr>
+             <td class="tolsto"><strong>Дневное обучение</strong></td> <!-- strong для жирного начертания -->
+             <td class="tolsto"><strong>4 года</strong></td>
+             <td class="teble-text">Наиболее интенсивный вариант обучения, для тех, кто не терпит компромиссов ни в чем.</td>
+           </tr>
+           <tr>
+             <td class="tolsto"><strong>Вечернее обучение</strong></td>
+             <td class="tolsto"><strong>5 лет</strong></td>
+             <td class="teble-text">Вынуждены совмещать учебу с работой? Дадим вам такую возможность, совмещайте на здоровье.</td>
+           </tr>
+         </table>
+       </div>
+
+    </div>
+   </section>
+<!-- Всё Ок -->
+
+<section class="contacts">  <!-- 4-й обязательный пункт из 5 -->
+  <div class="containercontacts">   <!-- Возможно контейнер центровщик -->
+
+    <h2 class="zagolovok-contacts-h2">Обратная связь</h2>
+    <form class="form-post" method="post">
+      <table class="contacts-table">
+        <tr class="contacts-tr contacts-tr-fio">
+          <td class="contacts-td contacts-td-text"><label for="FIO-id">ФИО:</label></td>
+          <td class="contacts-td contacts-td-fio"><input id="FIO" name="a" type="text" placeholder="Представьтесь, пожалуйста"></td>
+        </tr>
+        <tr class="contacts-tr contacts-tr-gender">
+          <td class="contacts-td contacts-td-text"><label for="gender-id">Пол:</label></td>
+          <td class="contacts-td contacts-td-gender"><input id="gender1" name="b" type="radio" value="Мужской" checked> Мужской <input id="gender2" type="radio" value="Женский"> Женский</td>
+        </tr>
+        <tr class="contacts-tr contacts-tr-comment">
+          <td class="contacts-td contacts-td-text"><label for="dop-text-id">Доп.текст:</label></td>
+          <td class="contacts-td contacts-td-comment"><textarea  id="dop-text" name="comment" placeholder="Сообщите все, что считаете нужным"></textarea></td>
+        </tr>
+        <tr class="contacts-tr contacts-tr-submit">
+          <td class="contacts-td contacts-td-text"></td>
+          <td class="contacts-td contacts-td-submit"><input name="c" type="submit" value="Отправить"></td>
+        </tr>
+      </table>
+    <!-- <p class="fio"><label>ФИО: <input name="a" type="text" placeholder="Представьтесь, пожалуйста"></label></p>
+     <p><label>Пол: <input name="b" type="radio" value="Мужской" checked>Мужской <input type="radio" value="Женский">Женский</label></p>
+     <p class="dop-text"><label>Доп. текст: <textarea name="comment" placeholder="Сообщите все, что считаете нужным"></textarea></label></p>
+     <p><input name="c" type="submit" value="Отправить"></p>-->
+    </form>
+    <div class="text-contacts">
+      <h3 class="zagolovok-contacts-h3">Заинтересовались обучением на нашей кафедре?</h3>
+      <p class="text-contacts-p">Заполните короткую форму обратной связи и отправьте нам</p>
+      <p class="text-contacts-p">Мы подготовим для вас индивидуальное предложение и выйдем на связь!</p>
+      <p><strong class="zagolovok-contacts-p">Внимание!</strong> Все поля обязательны для заполнения.</p>
+    </div>
+
+
+  </div>
+</section>
+<!-- С разметкой всё Ок-->
+
+
+   <footer class="main-footer">  <!-- 5-й обязательный пункт из 5 -->
+     <div class="container">   <!-- Возможно контейнер центровщик -->
+
+       <div class="logo-footer">  <!-- логотип с книгой -->
+       </div>
+       <div class="adrec">
+         197101, г. Санкт-Петербург,
+         пр. Кронверкский, д. 49
+       </div>
+
+       <div class="spicok-footer">
+         <ul>
+           <li class="zagolovok-li">Обучение</li>
+           <li>Расписание</li>
+           <li>Предметы</li>
+           <li>Практика</li>
+         </ul>
+       </div>
+
+         <div class="spicok-footer">
+           <ul>
+             <li class="zagolovok-li">Выпускники</li>
+             <li>Достижения</li>
+             <li>Отзывы</li>
+             <li>Найти</li>
+           </ul>
+       </div>
+
+       <div class="spicok-footer">
+         <ul>
+           <li class="zagolovok-li">Как поступить</li>
+           <li>На коммерцию</li>
+           <li>Целевой набор</li>
+           <li>На бюджет</li>
+         </ul>
+       </div>
+
+         <div class="spicok-footer">
+           <ul>
+             <li class="zagolovok-li">Контакты</li>
+             <li>Обратная связь</li>
+             <li>Схема проезда</li>
+             <li>Телефон/факс</li>
+           </ul>
+       </div>
+
+     </div>
+   </footer>
+
+  </body>
+</html>

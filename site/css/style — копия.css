@@ -1,0 +1,111 @@
+  body {               /* взял из образца */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.container{              /* центровщик*/
+  margin-top: o;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.main-header{           /* 1 блок */
+  background-color: #5d50a8;  
+}
+
+/*.main-logo{
+  position: absolute;
+  width: 183px;     /*  возможно потом нужно будет подобрать */
+/*  height: 90px;
+  background-image: url("../img/kniga.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%; /* выравниваем по центру картинку */
+/*  top: -30px;
+  left: 0px;
+}*/
+.main-logo{
+position: absolute;
+top: 30px;
+}
+
+.verhnie-ssylki{
+/*  margin-left: 350px; */
+padding-left: 350px;
+}
+.verhnie-ssylki ul li{
+  list-style-type: none;   /* убрать маркеры в маркированном списке*/
+  display: inline-block;   /* создаём горизоньалдьное меню */
+  margin-top: 30px;
+  margin-right: 35px;
+  font-family: "Trebuchet MS Bold";
+  font-size: 18px;
+}
+.verhnie-ssylki a{
+color: #ffffff;
+text-decoration: none;
+}
+/*.verhnie-ssylki a{
+font-family: "Trebuchet MS Bold";
+text-decoration: none;
+font-size: 18px;
+color: #ffffff;
+margin-right: 35px;
+}
+.verhnie-ssylki a:last-child{
+  margin-right: 0px;
+}*/
+
+.main-zagolovok{
+  margin-top: 180px;
+  max-width: 430px;
+  font-family: "Trebuchet MS Bold";
+  font-size: 45px;
+  color: #ffffff;
+/*  font-weight: bold; /* полужирное начертание */
+  line-height: 50px; /* Высота строк */
+}
+
+.main-text{
+  margin-top: 40px;
+  max-width: 300px;
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  color: #bcb3f2;
+  line-height: 30px; /* Высота строк */
+}
+
+.kartinka-planshet{
+  position: absolute;
+  width: 650px;     /*  возможно потом нужно будет подобрать */
+  height: 450px;
+/*  background-color: red; /* vremenno */
+  background-image: url("../img/planshet.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%; /* выравниваем по центру картинку */
+  top: 135px;   /* -30px */
+  left: 345px;
+}
+
+.main-knopka{
+margin-top: 50px;
+}
+/*.main-knopka input{
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #382d78;
+  border: none;
+  padding: 25px 80px;
+}*/
+.main-knopka a{
+  font-family: "Tahoma", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;  /* заглавные буквы */
+  color: #ffffff;
+  background-color: #382d78;
+  padding: 25px 80px;
+}
